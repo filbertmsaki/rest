@@ -3,10 +3,12 @@ from . import views
 from rest_framework import routers
 from . import views
 
-#r = routers.DefaultRouter()
-#r.register(r'road', views.RoadViewSet)
+r = routers.DefaultRouter()
+r.register(r'road', views.LightViewSet)
 
 urlpatterns = [
         #path('', include(r.urls)),
-        path('', views.RoadViewSet.as_view()),
+        path('', views.index, name='index'),
+        path('lightUpdate/<str:pk>', views.updateLight, name='updateLight'),
+        path('api/', include(r.urls)),
 ]

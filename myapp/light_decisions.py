@@ -16,7 +16,7 @@ IO.setup(18,IO.OUT)
 
 IO.setup(23,IO.OUT)
 IO.setup(24,IO.OUT)
-IO.setup(25,IO.OUT)
+IO.setup(16,IO.OUT)
 
 IO.setup(8,IO.OUT)
 IO.setup(7,IO.OUT)
@@ -38,7 +38,7 @@ lst_sen2 = [27,5,26]
 
 lst_green = [14,23,8]
 lst_yellow = [15,24,7]
-lst_red = [18,25,1]
+lst_red = [18,16,1]
 
 global status
 status = False

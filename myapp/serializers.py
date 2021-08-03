@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Road
+from .models import Light
 
-class RoadSerializer(serializers.ModelSerializer):
+class LightSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Road
+        model = Light
         fields = "__all__"
